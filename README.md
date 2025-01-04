@@ -3,19 +3,19 @@
 
 ## 1. Remove a Branch Locally
 
-To delete a branch locally, use:
+To delete a branch locally, use: ``` git branch -d <branch_name> ```
 
-``` git branch -d <branch_name> ```
+
 
 ## 2. Remove a Branch remotelly 
 
-To delete a branch on the remote repo, use:
+To delete a branch on the remote repo, use:``` git push origin --delete <branch_name> ```
 
-``` git push origin --delete <branch_name> ```
+
 
 # Tags 
-## how to list all tags 
-```git tag```
+## how to list all tags  ```git tag```
+
 
 ## Annotated Tags vs Lightweighted Tags
 
