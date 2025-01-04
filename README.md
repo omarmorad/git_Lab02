@@ -19,6 +19,6 @@ TO DELETE TAG LOCALLY AND REMOTELY
 Delete Tags Locally:  `git tag -d tag-name`.
 Delete Tags Remotely:  `git push origin --delete tag-name`
 
-tol ist all tags => git tags
+tol ist all tags => git tag
 
 ![Image](image.jpg)
