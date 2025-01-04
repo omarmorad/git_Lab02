@@ -35,28 +35,12 @@ To delete a branch on the remote repo, use:``` git push origin --delete <branch_
 
 # Rebase
 
-## 1 - switch to the branch you want to rebase 
-
-``` git checkout <branch_name> ```
-
-## 2 - rebase to the base branch
-
-``` git rebase <base_branch_name> ```
-
-## 3 - solve any conflicts
-** you can abort using the command 
-``` git rebase --abort ```
-
-
-## 4 - resume the rebase process
-
-``` git rebase --continue ```
 
 # When to use rebase
 
 ## new feature
 
-* if you're adding a new feature and you need to get the latest changes to the main branch you can use rebase instead of using unnesscary merges
-
+New Feature Development:
+Use rebase to incorporate the latest changes from the main branch without unnecessary merges.
 
 ![Image](image.jpg)
