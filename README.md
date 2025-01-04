@@ -23,7 +23,7 @@ To delete a branch on the remote repo, use:
 
 * Lightweight Tags: pointers to a specific commit, with no additional metadata.
 
-![Tags screenshot](/Images/Tags.png)
+
 
 ## How to delete tags
 
