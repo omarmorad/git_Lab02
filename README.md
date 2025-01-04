@@ -1,24 +1,62 @@
 # lab02
 
-## How to Remove Branches
 
-Locally:  `git branch -d branch-name` to delete a branch locally.
-Remotely: `git push origin --delete branch-name` to delete a branch remotely.
+## 1. Remove a Branch Locally
 
-Annotated tags: Store metadata (message, author, date) and are used for  releases or milestones (`git tag -a v1.7 -m "Version 1.7 - Lab 2 completed"`).  
-Lightweight tags: Simple commit pointers with no metadata  (`git tag v1.7`).
+To delete a branch locally, use:
 
-when to use rebase
-Clean Commit History: To create a linear and organized history by combining changes from the main branch (git rebase main)
-Feature Branch Updates: When you need to update your feature branch with the latest changes from the main branch before merging
-Avoid Merge Commits: To integrate changes without creating additional merge commits, making the history easier to read.
+``` git branch -d <branch_name> ```
+
+## 2. Remove a Branch remotelly 
+
+To delete a branch on the remote repo, use:
+
+``` git push origin --delete <branch_name> ```
+
+# Tags 
+## how to list all tags 
+```git tag```
+
+## Annotated Tags vs Lightweighted Tags
+
+* Annotated Tags: Full Git objects with metadata (message, author, date) and are usually used for marking releases or milestones.
+
+* Lightweight Tags: pointers to a specific commit, with no additional metadata.
+
+![Tags screenshot](/Images/Tags.png)
+
+## How to delete tags
+
+### locally 
+``` git tag -d <tag_name> ```
+
+### remote 
+``` git push origin --delete <tag_name> ```
+
+# Rebase
+
+## 1 - switch to the branch you want to rebase 
+
+``` git checkout <branch_name> ```
+
+## 2 - rebase to the base branch
+
+``` git rebase <base_branch_name> ```
+
+## 3 - solve any conflicts
+** you can abort using the command 
+``` git rebase --abort ```
 
 
-TO DELETE TAG LOCALLY AND REMOTELY
+## 4 - resume the rebase process
 
-Delete Tags Locally:  `git tag -d tag-name`.
-Delete Tags Remotely:  `git push origin --delete tag-name`
+``` git rebase --continue ```
 
-tol ist all tags => git tag
+# When to use rebase
+
+## new feature
+
+* if you're adding a new feature and you need to get the latest changes to the main branch you can use rebase instead of using unnesscary merges
+
 
 ![Image](image.jpg)
